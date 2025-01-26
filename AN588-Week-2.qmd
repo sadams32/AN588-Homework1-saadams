@@ -4,8 +4,16 @@ format: html
 editor: visual
 ---
 
-edits
+```{r}
+library(tidyverse)
+library(stringr)
+```
 
+```{r}
+Ulysses <- "Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed."
+Ulysses_split <- str_split(Ulysses, " ") [[1]]
+Ulysses_split[seq(from = 1, to = length(Ulysses_split), by = 3)]
+```
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
