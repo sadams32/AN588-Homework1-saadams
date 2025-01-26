@@ -22,6 +22,23 @@ Ulysses_vector_split <- str_split(Ulysses, " ")[[1]] #split text and "unlist" Ul
 Ulysses_vector_split[seq(from = 1, to = length(Ulysses_vector_split), by = 3)] # take every third element
 ```
 
+## Challenge 2
+
+```{r}
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE) # define matrix m
+
+x <- m[, c(2, 3, 6)] # select columns 2, 3, and 6 of matrix m for x
+x # print x
+
+x <- m[6:8,] # select row 6-8 of matrix m for x
+x # print x
+
+x <- m[2:6, 2:9] # select elements from row 2, column 2 to row 6, column 9 of matrix m for x
+x # print x
+
+```
+
+
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
