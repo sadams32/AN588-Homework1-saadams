@@ -50,6 +50,28 @@ a[2, 3, 2, ]
 a[1:5, 1:5, 3, 3] 
 ```
 
+## Challenge 4
+```{r}
+Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae", "Daubentoniidae") # Lemuroidea vector
+Lorisoidea <- c("Lorisidae", "Galagidae") # Lorisoidea vector
+Strepsirhini <- list(Lemuroidea, Lorisoidea) # Strepsirhini list
+names(Strepsirhini) <- list("Lemuroidea", "Lorisoidea") # Name list elements
+
+Catarrhini <- c("Cercopithecidae", "Hylobatidae", "Hominidae") #Catarrhini vector
+Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae") #Platyrrhini vector
+Anthropoidea <- list(Catarrhini, Platyrrhini) #Anthropoidea list
+names(Anthropoidea) <- list("Catarrhini", "Platyrrhini") # Name list elements
+
+
+Tarsioidea <- c("Tarsioidea") # Tarsioidea list
+Haplorhini <- list(Tarsioidea, Anthropoidea) # Haplorhini list
+names(Haplorhini) <- list("Tarsioidea", "Anthropoidea") # Name list elements
+
+Primates <- list(Strepsirhini, Haplorhini) #Primates list
+names(Primates) <- list("Strepsirhini", "Haplorhini") # Name list elements
+Primates
+```
+
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
