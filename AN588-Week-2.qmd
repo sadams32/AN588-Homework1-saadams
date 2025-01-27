@@ -51,6 +51,7 @@ a[1:5, 1:5, 3, 3]
 ```
 
 ## Challenge 4
+
 ```{r}
 Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae", "Daubentoniidae") # Lemuroidea vector
 Lorisoidea <- c("Lorisidae", "Galagidae") # Lorisoidea vector
@@ -72,25 +73,20 @@ names(Primates) <- list("Strepsirhini", "Haplorhini") # Name list elements
 Primates
 ```
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Challenge 5
 
 ```{r}
-1 + 1
+m3 = matrix(data = c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE)
+m3
+
+m3_df <- as.data.frame(m3)
+m3_df
+
+m3_df[, 2] <- as.logical(m3_df[, 2])
+m3_df[, 2]
+
+m3_df[, 3] <- as.factor(m3_df[, 3])
+m3_df[, 3]
+
+str(m3_df)
 ```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
-
-testing
