@@ -17,7 +17,7 @@ Ulysses_string = "Stately, plump Buck Mulligan came from the stairhead, bearing 
 
 Ulysses_vector <- gsub("[[:punct:]]","", Ulysses_string) # make vector of string w/o punctuation
 
-Ulysses_vector_split <- str_split(Ulysses, " ")[[1]] #split text and "unlist" Ulysses_vector_split
+Ulysses_vector_split <- str_split(Ulysses_vector, " ")[[1]] #split text and "unlist" Ulysses_vector_split
 
 Ulysses_vector_split[seq(from = 1, to = length(Ulysses_vector_split), by = 3)] # take every third element
 ```
