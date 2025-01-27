@@ -5,8 +5,7 @@ editor: visual
 ---
 
 ```{r}
-library(tidyverse)
-library(stringr)
+library(tidyverse) # includes stringr
 ```
 
 ## Challenge 1
