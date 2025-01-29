@@ -4,6 +4,11 @@ author: "Sylvie Adams"
 format: html
 editor: visual
 theme: "lux"
+toc: true
+toc-depth: 5
+code-block-bg: true
+code-block-border-left: "blue"
+highlight-style: "gruvbox"
 ---
 
 ```{r}
