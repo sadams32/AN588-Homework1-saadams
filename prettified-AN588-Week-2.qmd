@@ -69,7 +69,6 @@ Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae") #Platyrrhini vector
 Anthropoidea <- list(Catarrhini, Platyrrhini) #Anthropoidea list
 names(Anthropoidea) <- list("Catarrhini", "Platyrrhini") # Name list elements
 
-
 Tarsioidea <- c("Tarsioidea") # Tarsioidea vector
 Haplorhini <- list(Tarsioidea, Anthropoidea) # Haplorhini list
 names(Haplorhini) <- list("Tarsioidea", "Anthropoidea") # Name list elements
