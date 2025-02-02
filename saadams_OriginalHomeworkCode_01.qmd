@@ -101,5 +101,11 @@ str(m3_df) # Show data type for each variable in data frame
 I struggled with the following things while writing my code:
 
 1) Understanding how how to "unlist" an item line 26 of Challenge 1, or if I did it in the right way.
-2) In Challenge 4 I wasn't sure always when to make a vector or list. I also didn't know if the structure or order I did it in was the best
-3) I'm not sure when to write install.packages() versus library() when I want a package to be installed as a part of my code
+
+2) In Challenge 4 I wasn't sure always when to make a vector or list. I also didn't know if the structure or order I did it in was the best.
+
+3) I'm not sure when to write install.packages() versus library() when I want a package to be installed as a part of my code.
+
+4) I didn't know the best way to change particular features of my theme - I hope it ended up looking okay.
+
+5) I struggled with pushing and uploading things between the remote and local repositories - I think if this is being read now then it turned out okay!
