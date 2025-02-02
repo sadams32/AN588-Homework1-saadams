@@ -95,3 +95,11 @@ m3_df[, 3] # Print factor_valued column of m3_df
 
 str(m3_df) # Show data type for each variable in data frame
 ```
+
+## CHALLENGES
+
+I struggled with the following things while writing my code:
+
+1) Understanding how how to "unlist" an item line 26 of Challenge 1, or if I did it in the right way.
+2) In Challenge 4 I wasn't sure always when to make a vector or list. I also didn't know if the structure or order I did it in was the best
+3) I'm not sure when to write install.packages() versus library() when I want a package to be installed as a part of my code
