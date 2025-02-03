@@ -20,7 +20,7 @@ library(tidyverse) # includes stringr
 ```{r}
 # input text and split
 Ulysses_string = "Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed."
-
+3
 Ulysses_vector <- gsub("[[:punct:]]","", Ulysses_string) # make vector of string w/o punctuation
 
 Ulysses_vector_split <- str_split(Ulysses_vector, " ")[[1]] #split text and "unlist" Ulysses_vector_split
