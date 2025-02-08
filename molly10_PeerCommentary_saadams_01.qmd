@@ -1,5 +1,5 @@
 ---
-title: "AN588-Week-2"
+title: "molly10_PeerCommentary_saadams_01"
 author: "Sylvie Adams"
 format: html
 editor: visual
@@ -18,19 +18,21 @@ library(tidyverse) # includes stringr
 ## Challenge 1
 
 ```{r}
+# I put unlist() to this challenge but yours looks good.
+
 # input text and split
 Ulysses_string = "Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed."
 3
 Ulysses_vector <- gsub("[[:punct:]]","", Ulysses_string) # make vector of string w/o punctuation
 
-Ulysses_vector_split <- str_split(Ulysses_vector, " ")[[1]] #split text and "unlist" Ulysses_vector_split
 
-Ulysses_vector_split[seq(from = 1, to = length(Ulysses_vector_split), by = 3)] # take every third element
 ```
 
 ## Challenge 2
 
 ```{r}
+# I did the same work as you do. However, I named x to x1,x2,and x3 to prevent I messed them up. I am not sure if I use only use the symbol "x", will it be recovered later or not.
+
 m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE) # define matrix m
 
 x <- m[, c(2, 3, 6)] # select columns 2, 3, and 6 of matrix m for x
@@ -46,6 +48,8 @@ x # print x
 ## Challenge 3
 
 ```{r}
+# It is also much identical to mines. These two are quiet simple and clear.
+
 a <- array(data = 400:1, dim = c(5, 5, 4, 4)) # create array a (4 levels, 400 elements)
 a # print array a
 
@@ -59,6 +63,8 @@ a[1:5, 1:5, 3, 3] # print third subset of a
 ## Challenge 4
 
 ```{r}
+# I think you did it on the right track, for me, I am confused what kind of result should I get for this challenge, so I think I coded it in the wrong way.
+
 Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae", "Daubentoniidae") # Lemuroidea vector
 Lorisoidea <- c("Lorisidae", "Galagidae") # Lorisoidea vector
 Strepsirhini <- list(Lemuroidea, Lorisoidea) # Strepsirhini list
@@ -81,6 +87,8 @@ Primates # Print primate taxonomy
 ## Challenge 5
 
 ```{r}
+# Overall your work is so good! And I like your formating and interpretations with every step, it is very clear and easy to read.
+
 m3 = matrix(data = c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE) # create matrix m3, stored by rows
 m3 # Print matrix m3
 
@@ -96,28 +104,16 @@ m3_df[, 3] # Print factor_valued column of m3_df
 str(m3_df) # Show data type for each variable in data frame
 ```
 
-## CHALLENGES 
-
-### NOTE: Sylvie (sadams32) added Molly's comments to this document manually because Molly's edits to the homework were not appearing. Molly sent her comments via Slack.
+## CHALLENGES
 
 I struggled with the following things while writing my code:
 
-1)  Understanding how how to "unlist" an item line 26 of Challenge 1, or if I did it in the right way.
+1)  Understanding how how to "unlist" an item line 26 of Challenge 1, or if I did it in the right way. You are right. Unlist is not needed for this prompt since str_split( alreadt returned the vector.
 
-Molly// You are right. Unlist is not needed for this prompt since str_split( alreadt returned the vector.
+2)  In Challenge 4 I wasn't sure always when to make a vector or list. I also didn't know if the structure or order I did it in was the best. I think you did it right. Vectors is better for data that at the same level (for example, different species). Lists are used for data that have subcategories or data within different categories. So for Challenge 4, it is better to use lists since there are subgroups.
 
-2)  In Challenge 4 I wasn't sure always when to make a vector or list. I also didn't know if the structure or order I did it in was the best.
+3)  I'm not sure when to write install.packages() versus library() when I want a package to be installed as a part of my code. So if you write install.packages(), it means this package is installed in your whole R Studio, which can be used always. library() is a script-based code, so you only apply the file/data in your current script. If you want to use the data in your future script, you need to put library(xx) again in your new script. Hope that will be helpful.
 
-Molly//  I think you did it right. Vectors is better for data that at the same level (for example, different species). Lists are used for data that have subcategories or data within different categories. So for Challenge 4, it is better to use lists since there are subgroups.
+4)  I didn't know the best way to change particular features of my theme - I hope it ended up looking okay. I didn't try it also, but I believe you can use theme()!
 
-3)  I'm not sure when to write install.packages() versus library() when I want a package to be installed as a part of my code.
-
-Molly// So if you write install.packages(), it means this package is installed in your whole R Studio, which can be used always. library() is a script-based code, so you only apply the file/data in your current script. If you want to use the data in your future script, you need to put library(xx) again in your new script. Hope that will be helpful.
-
-4)  I didn't know the best way to change particular features of my theme - I hope it ended up looking okay.
-
-Molly//  I didn't try it also, but I believe you can use theme()!
-
-5)  I struggled with pushing and uploading things between the remote and local repositories - I think if this is being read now then it turned out okay!
-
-Molly// I also struggled with it on Friday. I believe the first time we tried to push the repo, the github app will send a warming bar and we need to click on it, then the repo will be upload to the webpage successfully.
+5)  I struggled with pushing and uploading things between the remote and local repositories - I think if this is being read now then it turned out okay! I also struggled with it on Friday. I believe the first time we tried to push the repo, the github app will send a warming bar and we need to click on it, then the repo will be upload to the webpage successfully.
