@@ -97,3 +97,23 @@ m3_df[, 3] # Print factor_valued column of m3_df
 
 str(m3_df) # Show data type for each variable in data frame
 ```
+
+## Notes
+
+Final Push: Febuary 3, 2025 3:24 pm
+Push to add this note: March 27, 2025 6:51 pm (initially I put these comments when in my peer's qmd instead of mine)
+
+### 1) What you learned from running their Original Homework Code that helped improve your own code.
+I was trying to figure out what lines 8-10 were accomplishing. I'm not sure if it would be helpful to have or not in my quarto document because it seems like my document automatically displays the code when it's run.
+
+In Challenge 3, I think Carly was more concise with her commenting. For example, in my code I commented after every subset of the array I made. This wasn't really necessary and could easily become redundant.
+
+### 2) What you did in your own code that might help to improve theirs.
+For Challenge 1, I named the items I was working with pretty specifically (ex. Ulysses_vector) and also worked with different vectors instead of updating the changes (original, split) to the same vector. I'm honestly not sure if either is better or if they are both equally acceptable ways.
+
+
+### 3) What challenges, if any, you both faced in your code that could not be helped by comparison.
+I realized in Challenge 2 that both of us were not using the same method to select rows/columns every time. I don't think it has to be the same, but it does seem like the code might read better if we do so I'll probably change mine to reflect this too.
+
+### 4) Whether the annotation/commenting on your peer’s Original Homework Code is readable and interpretable to you, and if not then how it could be improved.
+Overall Carly's code was very readable! I think she overall did a good job commenting on her code, but should maybe add another comment here or there if she thinks it would be difficult to remember how to do certain things a few weeks or months from now. I think Challenge 4 is a little hard to read, but I struggled with the same thing and was hoping to get some advice during class about how to construct this challenge to be more organized.
